@@ -12,6 +12,9 @@
 		0771ED5A1CF1ED7B00C95468 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0771ED581CF1ED7B00C95468 /* LaunchScreen.storyboard */; };
 		0771ED661CF1F79100C95468 /* DTNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771ED651CF1F79100C95468 /* DTNavController.swift */; };
 		0771ED681CF1F7C500C95468 /* DTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771ED671CF1F7C500C95468 /* DTViewController.swift */; };
+		0771ED6A1CF1FE0A00C95468 /* CardImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771ED691CF1FE0A00C95468 /* CardImageModel.swift */; };
+		0771ED6C1CF1FED100C95468 /* CardImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771ED6B1CF1FED100C95468 /* CardImageManager.swift */; };
+		0771ED6E1CF1FFC100C95468 /* images.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0771ED6D1CF1FFC100C95468 /* images.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		0771ED5B1CF1ED7B00C95468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0771ED651CF1F79100C95468 /* DTNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTNavController.swift; sourceTree = "<group>"; };
 		0771ED671CF1F7C500C95468 /* DTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTViewController.swift; sourceTree = "<group>"; };
+		0771ED691CF1FE0A00C95468 /* CardImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardImageModel.swift; sourceTree = "<group>"; };
+		0771ED6B1CF1FED100C95468 /* CardImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardImageManager.swift; sourceTree = "<group>"; };
+		0771ED6D1CF1FFC100C95468 /* images.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = images.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,8 @@
 		0771ED611CF1F6E300C95468 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0771ED691CF1FE0A00C95468 /* CardImageModel.swift */,
+				0771ED6B1CF1FED100C95468 /* CardImageManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -84,6 +92,7 @@
 				0771ED561CF1ED7B00C95468 /* Assets.xcassets */,
 				0771ED581CF1ED7B00C95468 /* LaunchScreen.storyboard */,
 				0771ED5B1CF1ED7B00C95468 /* Info.plist */,
+				0771ED6D1CF1FFC100C95468 /* images.plist */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -156,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0771ED5A1CF1ED7B00C95468 /* LaunchScreen.storyboard in Resources */,
+				0771ED6E1CF1FFC100C95468 /* images.plist in Resources */,
 				0771ED571CF1ED7B00C95468 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,7 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0771ED6C1CF1FED100C95468 /* CardImageManager.swift in Sources */,
 				0771ED681CF1F7C500C95468 /* DTViewController.swift in Sources */,
+				0771ED6A1CF1FE0A00C95468 /* CardImageModel.swift in Sources */,
 				0771ED501CF1ED7B00C95468 /* AppDelegate.swift in Sources */,
 				0771ED661CF1F79100C95468 /* DTNavController.swift in Sources */,
 			);
