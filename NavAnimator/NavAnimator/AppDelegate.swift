@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  NavAnimator
-//
-//  Created by 李晓萌 on 16/5/22.
-//  Copyright © 2016年 netease. All rights reserved.
-//
 
 import UIKit
 
@@ -15,10 +8,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow()
+        self.window!.rootViewController = DTNavController(rootViewController: DTViewController())
+        self.window!.makeKeyAndVisible()
         return true
     }
 
-
+    
 }
 

@@ -10,6 +10,8 @@
 		0771ED501CF1ED7B00C95468 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771ED4F1CF1ED7B00C95468 /* AppDelegate.swift */; };
 		0771ED571CF1ED7B00C95468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0771ED561CF1ED7B00C95468 /* Assets.xcassets */; };
 		0771ED5A1CF1ED7B00C95468 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0771ED581CF1ED7B00C95468 /* LaunchScreen.storyboard */; };
+		0771ED661CF1F79100C95468 /* DTNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771ED651CF1F79100C95468 /* DTNavController.swift */; };
+		0771ED681CF1F7C500C95468 /* DTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771ED671CF1F7C500C95468 /* DTViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		0771ED561CF1ED7B00C95468 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0771ED591CF1ED7B00C95468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0771ED5B1CF1ED7B00C95468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0771ED651CF1F79100C95468 /* DTNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTNavController.swift; sourceTree = "<group>"; };
+		0771ED671CF1F7C500C95468 /* DTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +54,46 @@
 		0771ED4E1CF1ED7B00C95468 /* NavAnimator */ = {
 			isa = PBXGroup;
 			children = (
-				0771ED4F1CF1ED7B00C95468 /* AppDelegate.swift */,
+				0771ED611CF1F6E300C95468 /* Model */,
+				0771ED621CF1F6E900C95468 /* Controller */,
+				0771ED641CF1F70100C95468 /* Other */,
+				0771ED631CF1F6F300C95468 /* Support */,
+			);
+			path = NavAnimator;
+			sourceTree = "<group>";
+		};
+		0771ED611CF1F6E300C95468 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0771ED621CF1F6E900C95468 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0771ED651CF1F79100C95468 /* DTNavController.swift */,
+				0771ED671CF1F7C500C95468 /* DTViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0771ED631CF1F6F300C95468 /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				0771ED561CF1ED7B00C95468 /* Assets.xcassets */,
 				0771ED581CF1ED7B00C95468 /* LaunchScreen.storyboard */,
 				0771ED5B1CF1ED7B00C95468 /* Info.plist */,
 			);
-			path = NavAnimator;
+			name = Support;
+			sourceTree = "<group>";
+		};
+		0771ED641CF1F70100C95468 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0771ED4F1CF1ED7B00C95468 /* AppDelegate.swift */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,9 +122,10 @@
 		0771ED441CF1ED7A00C95468 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DT;
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = netease;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					0771ED4B1CF1ED7A00C95468 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -128,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0771ED681CF1F7C500C95468 /* DTViewController.swift in Sources */,
 				0771ED501CF1ED7B00C95468 /* AppDelegate.swift in Sources */,
+				0771ED661CF1F79100C95468 /* DTNavController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
