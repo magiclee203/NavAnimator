@@ -10,6 +10,8 @@ class DTNavController: UINavigationController, UINavigationControllerDelegate {
     }
     
     func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return DTAnimationController.sharedAnimator
+        let animationController = DTAnimationController()
+        animationController.operation = operation
+        return animationController
     }
 }
